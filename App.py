@@ -76,7 +76,7 @@ class WooCommerceAPI:
     def get_subscriptions(self, per_page: int = 10, page: int = 1) -> Dict:
         """Fetch subscriptions from WooCommerce"""
         try:
-            url = f"{self.base_url}/wp-json/wc/v3/subscriptions"
+            url = f"{self.base_url}/wp-json/wc/v3/subscription"
             params = {
                 'per_page': per_page,
                 'page': page
